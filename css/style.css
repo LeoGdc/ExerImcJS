@@ -1,3 +1,4 @@
+            
 * {
     padding: 0;
     margin: 0;
@@ -71,11 +72,10 @@ button {
     padding: 20px;
     user-select: none;
 }
-
-.verde {
+#parabens{
     color: green;
 }
-
-.vermelho {
+#cuidado{
     color: red;
 }
+
