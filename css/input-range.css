@@ -4,6 +4,7 @@
     display: flex;
     flex-direction:column ;
     justify-content: center;
+ 
 }
 .range label{
     text-align: center;
@@ -17,10 +18,10 @@
     content: attr(data-unidade);
     padding: left 10px; 
 }
-.range input[type = 'range']{
+.range input[type='range']{
     appearance: none;
 }
-.range input [type = 'range']::-webkit-slider-runnable-track{
+.range input[type='range']::-webkit-slider-runnable-track{
     height: 5px;
     background-color: var(--light-color);
     cursor: pointer;
@@ -29,9 +30,9 @@
     appearance: none ;
     height: 20px;
     width: 20px;
-    background-color: var (--primary-color);
+    background-color: var(--primary-color);
     border-radius: 50%;
-    transform: translate(-7.5px);
+    transform: translatey(-7.5px);
 }
 
 /* firefox */
