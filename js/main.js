@@ -1,5 +1,7 @@
 'use strict'
 
+import {iniciarRange}from "./input-range.js";
+
 const camposValidos = () => document.getElementById('formulario').reportValidity();
 
 const calcularImc = (altura, peso) => peso/(altura*altura);
@@ -39,12 +41,6 @@ function mostrarResultado(){
 
  document.getElementById('calcular').addEventListener('click' , mostrarResultado);
 
- const iniciarRange = (idRange) => {
-    const range = document.getElementById(idRange)
-    const span = document.getElementById(`valor-${idRange}`)
-
-    const atualizarValor = () => span.textContent = range.value
-    range.addEventListener('input', atualizarValor)
- }
-iniciarRange ('altura')
-iniciarRange ('peso')
+ 
+ iniciarRange ('altura')
+ iniciarRange ('peso')
